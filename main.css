@@ -1,0 +1,16 @@
+/*Stylesheet*/
+
+.body{
+	width: 250px;
+	height: 150px;
+	border: solid 3px rgb(180, 180, 180);
+	border-radius: 5px;
+	margin: 15% auto;
+	clear: both;
+}
+
+.body form {
+	margin: 2% auto;
+	clear: both;
+	
+}
