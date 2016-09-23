@@ -10,20 +10,19 @@
 }
 
 .body form {
-	margin: 2% auto;
+	width: 50%;
+	margin: 15% auto;
 	clear: both;
-	
 }
 
 .body form input {
-	margin: 2%;
+	
 }
 
 #un, #pw {
-	width: 50%;
-	margin: 0 auto;
-	display: inline;
-	float: none;
+	width: 125px;
+	clear: both;
+	margin: 3%;
 }
 
 #un{
@@ -34,10 +33,11 @@
 	
 }
 
-#lgin{
-	
+#lgin, #reg{
+	width: 48%;
+	margin: 1%;
+	float: left;
 }
 
-#reg{
-	
+#lgin{
 }
