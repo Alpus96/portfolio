@@ -16,5 +16,28 @@
 }
 
 .body form input {
+	margin: 2%;
+}
+
+#un, #pw {
+	width: 50%;
+	margin: 0 auto;
+	display: inline;
+	float: none;
+}
+
+#un{
+	
+}
+
+#pw{
+	
+}
+
+#lgin{
+	
+}
+
+#reg{
 	
 }
