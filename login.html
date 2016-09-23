@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <header>
 	<!--site information-->
 	<meta charset="UTF-8">
@@ -13,42 +14,9 @@
 </header>
 
 <body>
-	<!--php-->
-	<?php
-		session_start();
+	<!--PHP-->
+	<?php include 'login.php'; ?>
 	
-		if($_LOGIN['login']){
-			include_once('db.php');
-			$username = strip_tags($_LOGIN['username']);
-			$password = strip_tags($_LOGIN['password']);
-		
-			$username = stripslashes($username);
-			$password = stripslashes($password);
-		
-			$username = mysqli_real_escape_string($username);
-			$password = mysqli_real_escape_string($password);
-		
-			$password = md5($password);
-		
-			$sql = "SELECT * FROM " & $table & " WHERE " & $column & " = '$username' LIMIT 1";
-			$query = mysqli_query($db, $sql);
-			$row = mysqli_fetch_array($query);
-			$id = $row['id'];
-			$db_password= $row['passowrd'];
-		
-			if($password == $db_password){
-				$_SESSION['username'] = $username;
-				$_SESSION['id'] = $id;
-				header("Location: index.php");
-			}else{
-				echo "You entered the wrong details!";
-			}
-		}
-		//a change
-		if(!$db_password){
-		
-		}
-	?>
 	<!--Meny-->
 	<nav class="menu">
 	
@@ -57,12 +25,14 @@
 	<!--Sidans kropp/innehåll-->
 	<div class="body">
 		<!--Title-->
-		<h3 id="title">Welcome! Please login.</h3>
+		<h3 id="title">Please login.</h3>
+		<!--PHP echo-->
+		<p id="echo_lgin"><!--<script><?php function resp(){echo $resp;} ?>--></script></p>
 		<!--login form-->
-		<form action="login.php" method="login" enctype="multitype/form-data">
-			<input id="un" placeholder="Username" name="username" type="text" autofocus>
-			<input id="pw" placeholder="Password" name="password" type="text">
-			<input id="reg" name="register" type="button" value="Register">
+		<form name="login" method="login" enctype="multitype/form-data">
+			<input id="un" placeholder="Username" name="username" type="text" required autofocus>
+			<input id="pw" placeholder="Password" name="password" type="password"required>
+			<input id="reg" name="register" type="button" value="Register" method="register">
 			<input id="lgin" name="login" type="submit" value="Login">
 		</form>
 	</div>
@@ -73,23 +43,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
