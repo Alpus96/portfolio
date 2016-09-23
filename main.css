@@ -1,6 +1,22 @@
 /*Stylesheet*/
 body {
-	background-color: #00ace6;
+
+}
+
+.bg{
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('lgin_bg.jpg');
+	z-index: -1;
+	/*-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);*/
 }
 
 .body{
@@ -8,7 +24,9 @@ body {
 	height: 170px;
 	margin: 15% auto;
 	clear: both;
-	border-top: solid 5px #BBB;
+	border-top: solid 5px rgb(0, 172, 230);
+	border-bottom: solid 5px rgb(0, 172, 230);
+	border-radius: 10px;
 	background-color: #FFF;
 }
 
