@@ -1,17 +1,20 @@
 /*Stylesheet*/
+body {
+	background-color: #00ace6;
+}
 
 .body{
 	width: 250px;
-	height: 150px;
-	border: solid 3px rgb(180, 180, 180);
-	border-radius: 5px;
+	height: 160px;
 	margin: 15% auto;
 	clear: both;
+	border-top: solid 5px #BBB;
+	background-color: #FFF;
 }
 
 .body form {
-	width: 50%;
-	margin: 15% auto;
+	width: 60%;
+	margin: 20px auto;
 	clear: both;
 }
 
@@ -19,25 +22,24 @@
 	
 }
 
-#un, #pw {
-	width: 125px;
+#title {
+	display: inline-block;
+	font: georgia;
+	color: #222;
+	margin: 20px auto 0 auto;
 	clear: both;
-	margin: 3%;
+	width: 100%;
+	text-align: center;
 }
 
-#un{
-	
-}
-
-#pw{
-	
+#un, #pw {
+	width: 96%;
+	clear: both;
+	margin: 2%;
 }
 
 #lgin, #reg{
-	width: 48%;
-	margin: 1%;
+	width: 46%;
+	margin: 2%;
 	float: left;
-}
-
-#lgin{
 }
