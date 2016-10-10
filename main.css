@@ -1,8 +1,8 @@
-/*Stylesheet*/
-body {
+/*CSS*/
 
-}
+/*	LOGIN PAGE	*/
 
+/*Background image*/
 .bg{
 	margin: 0 auto;
 	position: absolute;
@@ -10,36 +10,30 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('lgin_bg.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('lgin_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: -1;
-	/*-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	filter: grayscale(100%);*/
 }
 
+/*Login-box*/
 .body{
 	width: 250px;
-	height: 170px;
-	margin: 15% auto;
+	height: 160px;
+	margin: 17% auto;
 	clear: both;
 	border-top: solid 5px rgb(0, 172, 230);
-	border-bottom: solid 5px rgb(0, 172, 230);
-	border-radius: 10px;
 	background-color: #FFF;
 }
 
+/*Content*/
 .body form {
 	width: 60%;
 	margin: 10px auto;
 	clear: both;
 }
 
-.body form input {
-	
-}
-
+/*Login title*/
 #title {
 	display: inline-block;
 	font: georgia;
@@ -50,6 +44,7 @@ body {
 	text-align: center;
 }
 
+/*Invalid login response*/
 #echo_lgin{
 	width: 60%;
 	padding: 3px 0;
@@ -59,19 +54,22 @@ body {
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(230, 58, 0);
-	/*background-color: rgba(0, 172, 230, 0.3);
-	border: solid 1px rgba(0, 172, 230, 0.0);
-	border-radius: 3px;*/
 }
 
+/*Login input fields*/
 #un, #pw {
 	width: 96%;
 	clear: both;
 	margin: 2%;
 }
 
+/*Login buttons*/
 #lgin, #reg{
 	width: 46%;
 	margin: 2%;
 	float: left;
 }
+
+/**/
+
+/**/

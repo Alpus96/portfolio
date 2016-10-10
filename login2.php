@@ -35,6 +35,7 @@
 		}
 	}		
 ?>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<!--site information-->
@@ -69,7 +70,7 @@
 		<!--PHP echo-->
 		<p id="echo_lgin"><?php function resp(){echo $resp;} ?></p>
 		<!--login form-->
-		<form name="login" action="login.php" method="login" enctype="multitype/form-data">
+		<form name="login" action="login.php" method="post" enctype="multitype/form-data">
 			<input id="un" placeholder="Username" name="username" type="text" required autofocus maxlength="25" minlength="6">
 			<input id="pw" placeholder="Password" name="password" type="password" required maxlength="50" minlength="6">
 			<input id="reg" name="register" type="button" value="Register" method="register">
