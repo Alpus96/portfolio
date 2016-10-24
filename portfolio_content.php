@@ -1,0 +1,100 @@
+<?php?>
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/main.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+	<title>Portfolio: Alexander LP</title>
+</head>
+
+<body>
+	<div id="top-pos">
+		<a name="landing">
+			<p> - </p>
+		</a>
+	</div>
+	<div id="top">
+		<div id="filter">
+			<img src="images/bg_Coffee.jpg" class="bg" alt="" style="-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);">
+		</div>
+		<div id='cssmenu'>
+			<ul>
+				<li><a href='#landing'>Landing</a></li>
+				<li><a href='#skills'>My skills</a></li>
+				<!-- <li><a href='#doc'>Documentation</a></li> -->
+				<li><a href='#contact'>Contact me</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section">
+		<div id="welcome">
+			<h2>Welcome to my website!</h2>
+			<p>I have made this website to show my skill in web development and design. I have also included my CV and Cover Letter. Hope you like what I have made.</p>
+		</div>
+	</div>
+
+	<a name="skills">
+		<div id="skills" class="section">
+			<h3>
+				My Skills
+			</h3>
+			<p>
+				RIKTIG TEXT SKA IN HÄR!!! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nec arcu vel molestie. Cras magna dolor, ornare in massa at, pulvinar tempus lectus. Phasellus molestie, turpis id imperdiet auctor, purus leo porttitor eros, bibendum pulvinar augue nisi sed nunc. Donec turpis orci, fringilla in mi non, tempus auctor dolor. Aliquam non elit lobortis, dapibus magna a, feugiat sem. Nunc at dapibus massa. Nam in eros ut libero facilisis maximus. Cras ac lorem felis. Praesent luctus arcu et sagittis elementum. Aenean vel mauris ac eros aliquet facilisis et quis sapien.
+				<br />
+				<br />Mauris auctor, diam at tincidunt porttitor, metus nibh feugiat libero, in tempus mauris orci ut nisi. Quisque fermentum arcu at faucibus auctor. Etiam luctus vitae augue vel placerat. Etiam hendrerit lectus vitae purus consectetur, vitae finibus enim malesuada. Curabitur eu purus sit amet dui malesuada semper sit amet in orci. Quisque efficitur sed arcu non dictum. Fusce in sem quis lectus vulputate aliquam. Morbi congue finibus orci, vitae consectetur risus molestie id. Etiam sed odio massa. In porttitor turpis sed eros blandit maximus. Duis dignissim interdum nulla sed lacinia. Duis ac iaculis metus. Aliquam sed urna cursus, egestas tortor vel, tincidunt mi. Donec libero tortor, fermentum eu pulvinar non, blandit vitae eros.
+				<!-- Infoga text om mina färdigheter, min: 400(ord) max: 800(ord) -->
+			</p>
+			<div id="cvmm">
+				<div id="d1">
+					<a href="/file/CV_Alexander_Ljungberg_Perme_14-09-2015.docx" target="_blank"><img src="images/curriculum.png" />
+						<p>My CV</p>
+					</a>
+				</div>
+				<div id="d2">
+					<a href="/file/PersonligtBrev.docx" target="_blank"><img src="images/letter.png" />
+						<p>My Cover Letter</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</a>
+
+	<!-- <a name="doc">
+		Infoga alla framtida documentationer under utveckling av programvara
+		<div id="showcase">
+			<h>
+				Infoga rubrik för showcase
+			</h>
+			<p>
+				skriv kort text om showcase och hur man kollar på det om det verkar intressant
+			</p>
+			<div>
+				Infoga filer för hemtnign av 'showcase'-mjukvara ('<a href="yourfile.xxx" target="_blank">'''word'''</a>')
+			</div>
+		</div>
+	</a> -->
+
+	<a name="contact">
+		<div id="contact" class="section">
+			<div>
+				<img src="images/winter_BW.jpg" class="bg2" />
+			</div>
+			<div id="cont-3">
+				<h3>contact me</h3>
+				<p id="c-main">RIKTIG TEXT SKA IN HÄR!!! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nec arcu vel molestie. Cras magna dolor, ornare in massa at, pulvinar tempus lectus. Phasellus molestie, turpis id imperdiet auctor, purus leo porttitor eros, bibendum pulvinar augue nisi sed nunc. Donec turpis orci, fringilla in mi non, tempus auctor dolor. Aliquam non elit lobortis, dapibus magna a, feugiat sem. Nunc at dapibus massa. Nam in eros ut libero facilisis maximus. Cras ac lorem felis. Praesent luctus arcu et sagittis elementum. Aenean vel mauris ac eros aliquet facilisis et quis sapien.</p>
+			</div>
+			<div id="info">
+				<p>Tel: 073 805 34 80</p>
+				<p>E-mail: <a href="mailto:alex.perme@gmail.com">alex.perme@gmail.com</a></p>
+			</div>
+		</div>
+	</a>
+
+</body>
+<html>

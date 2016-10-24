@@ -1,0 +1,511 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/*	whole site   */
+
+html {
+	height: 300%;
+}
+
+
+/*    Menu     */
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	line-height: 1;
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#cssmenu:after,
+#cssmenu > ul:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#cssmenu #menu-button {
+	display: none;
+}
+
+#cssmenu {
+	font-family: Raleway, sans-serif;
+	font-weight: bolder;
+	line-height: 1;
+	position: fixed;
+	top: 10px;
+	width: 99%;
+	margin: 0 auto;
+	clear: both;
+	z-index: -1;
+}
+
+#cssmenu > ul {
+	background: rgba(79, 127, 160, 1);
+	/*#3db2e1*/
+}
+
+#cssmenu > ul > li {
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+#cssmenu.align-center > ul {
+	font-size: 0;
+	text-align: center;
+}
+
+#cssmenu.align-center > ul > li {
+	display: inline-block;
+	float: none;
+}
+
+#cssmenu.align-right > ul > li {
+	float: right;
+}
+
+#cssmenu > ul > li > a {
+	padding: 16px 20px;
+	font-size: 14px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: rgba(79, 127, 160, 1);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+
+/*#cssmenu > ul > li.active > a {
+    color: #ffffff;
+}*/
+
+#cssmenu > ul > li.active > a {
+	background-color: rgba(55, 88, 111, 1);
+}
+
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+	color: #ffffff;
+	-webkit-transform: rotateX(90deg) translateY(-23px);
+	-moz-transform: rotateX(90deg) translateY(-23px);
+	transform: rotateX(90deg) translateY(-23px);
+	-ms-transform: none;
+}
+
+#cssmenu > ul > li > a::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: -1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 16px 15px;
+	color: #ffffff;
+	background: rgba(55, 88, 111, 1);
+	content: attr(data-title);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-ms-transform: translateY(- -18px);
+}
+
+#cssmenu > ul > li:hover > a::before,
+#cssmenu > ul > li > a:hover::before {
+	background: rgba(55, 88, 111, 1);
+}
+
+#cssmenu.small-screen {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+	clear: both;
+}
+
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+	width: 100%;
+	text-align: left;
+}
+
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+	float: none;
+	display: block;
+	border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+	background: rgba(55, 88, 111, 1);
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;
+	-ms-transform: none;
+}
+
+#cssmenu.small-screen > ul > li > a::before {
+	display: none;
+}
+
+#cssmenu.small-screen #menu-button {
+	display: block;
+	padding: 16px 20px;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: rgba(79, 127, 160, 1);
+}
+
+#cssmenu.small-screen #menu-button:after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	width: 22px;
+	height: 3px;
+}
+
+#cssmenu.small-screen #menu-button.menu-opened:after {
+	border-top: 2px solid #dff2fa;
+	border-bottom: 2px solid #dff2fa;
+}
+
+#cssmenu.small-screen #menu-button:before {
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 27px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #ffffff;
+}
+
+#cssmenu.small-screen #menu-button.menu-opened:before {
+	background: #dff2fa;
+}
+
+
+/*    body     */
+
+.section {
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: -10;
+}
+
+#top-pos {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	visibility: hidden;
+}
+
+
+/*	background   */
+
+img.bg {
+	display: block;
+	z-index: -10;
+	min-height: 100%;
+	/*min-width: 1024px;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	/*img.bg {
+		left: 50%;
+		margin-left: -512px;
+	}*/
+}
+
+
+/*	section 1	*/
+
+#landing {
+	top: 0;
+	z-index: -3;
+	height: 100%;
+}
+
+#welcome {
+	width: 35%;
+	height: auto;
+	padding: 25px;
+	margin-top: 275px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	display: block;
+	background-color: rgba(111, 78, 55, 0.65);
+}
+
+@media screen and (max-width: 769px) {
+	#welcome {
+		width: 70%;
+		margin-top: 200px;
+	}
+}
+
+#welcome h2 {
+	font-family: Raleway, sans-serif;
+	font-size: 34px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#welcome p {
+	font-family: Raleway, sans;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+/*	section 2	*/
+
+#skills {
+	left: 0;
+	background-color: rgba(111, 78, 55, 0.2);
+	z-index: -2;
+	top: 100%;
+}
+
+#skills h3 {
+	margin: 5% auto;
+	width: 65%;
+	clear: both;
+	font-size: 26px;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+
+#skills p {
+	font-family: Raleway, sans;
+	font-size: 18px;
+	margin: 0 auto;
+	clear: both;
+	width: 65%;
+}
+
+#cvmm {
+	width: 35%;
+	margin: 4% auto;
+}
+
+#cvmm a {
+	text-decoration: none;
+	color: black;
+	font-family: Raleway, sans;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+#d1 {
+	position: relative;
+	float: left;
+	width: 25%;
+}
+
+#d1 img {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+#d1 p {
+	text-align: center;
+	width: 100%;
+	font-size: 22px;
+}
+
+#d2 {
+	position: relative;
+	float: right;
+	width: 25%;
+}
+
+#d2 img {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+#d2 p {
+	position: relative;
+	text-align: center;
+	width: 120%;
+	left: -10%;
+	font-size: 22px;
+}
+
+@media screen and (max-width: 1300px) and (min-height: 750px) {
+	#skills h3 {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (min-width: 1300px) and (max-height: 750px) {
+	#skills h3 {
+		margin-top: 6%;
+	}
+	#d1 img,
+	#d2 img {
+		width: 50%;
+		margin: -1% 25%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#skills h3 {
+		margin-top: 15%;
+	}
+	#skills p {
+		font-size: 16px;
+	}
+	#d1 p,
+	#d2 p {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#cvmm {
+		width: 50%;
+	}
+	#d1,
+	#d2 {
+		width: 40%;
+	}
+	#d1 img,
+	#d2 img {
+		width: 50%;
+		margin: 0 25%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#cvmm {
+		width: 100%;
+	}
+	#d1 img,
+	#d2 img {
+		width: 20%;
+		margin: 0 40%;
+	}
+}
+
+
+/*	section 3	*/
+
+img.bg2 {
+	display: block;
+	z-index: -10;
+	min-height: 100%;
+	/*min-width: 1024px;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#contact {
+	top: 200%;
+	/*background-color: #FFFFEB;*/
+}
+
+#cont-3 {
+	margin: 17% auto;
+	width: 55%;
+	padding: 20px;
+	background-color: rgba(111, 78, 55, 0.65);
+}
+
+#contact h3 {
+	text-align: center;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+#c-main {
+	font-size: 18px;
+}
+
+#contact p {
+	margin: 1% auto;
+	clear: both;
+}
+
+#contact h3,
+#contact p {
+	font-family: raleway, sans-serif;
+	color: white;
+}
+
+#info {
+	width: 55%;
+	margin: -17% auto;
+	clear: both;
+	font-size: 25px;
+	padding: 20px;
+	background-color: rgba(111, 78, 55, 0.65);
+}
+
+#info p,
+#info a {
+	text-align: center;
+	color: white;
+}
